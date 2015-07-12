@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untitled3</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<p>Hello,world</p>
+
+<% @users.name %>
+
+
+<%= yield %>
+<%= form_tag("/Json/search", method: "get") do %>
+    <%= label_tag(:input_label, "Search for:") %>
+    <%= text_field_tag(:input) %>
+    <%= submit_tag("Search") %>
+<% end %>
+</body>
+</html>
