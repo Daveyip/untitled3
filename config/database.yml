@@ -15,7 +15,7 @@ development:
   database: test
   encoding: utf8
   host: localhost
-  password: 26572827
+  password: root
   username: root
 
 production:
@@ -23,7 +23,7 @@ production:
   database: test
   encoding: utf8
   host: localhost
-  password: 26572827
+  password: root
   username: root
 
 test:
@@ -31,5 +31,5 @@ test:
   database: test
   encoding: utf8
   host: localhost
-  password: 26572827
+  password: root
   username: root
